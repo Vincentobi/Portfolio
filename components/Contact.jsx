@@ -65,9 +65,9 @@ const Contact = () => {
                                 <div>
                                     <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">Follow Me</p>
                                     <div className="flex gap-4">
-                                        <a className="text-slate-400 hover:text-primary transition-colors font-semibold" href="#">LinkedIn</a>
-                                        <a className="text-slate-400 hover:text-primary transition-colors font-semibold" href="#">GitHub</a>
-                                        <a className="text-slate-400 hover:text-primary transition-colors font-semibold" href="#">Twitter</a>
+                                        <a className="text-slate-400 hover:text-primary transition-colors font-semibold" href="www.linkedin.com/in/obiora-vincent-542900226" target='_blank'>LinkedIn</a>
+                                        <a className="text-slate-400 hover:text-primary transition-colors font-semibold" href="https://github.com/Vincentobi" target="_blank">GitHub</a>
+                                        <a className="text-slate-400 hover:text-primary transition-colors font-semibold" href="https://x.com/ObioraVincent9" target="_blank">Twitter</a>
                                     </div>
                                 </div>
                             </div>
