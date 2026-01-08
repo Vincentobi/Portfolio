@@ -25,6 +25,7 @@ import build from "./build.png";
 import sylviaImg from "./sylviastudioImg.png";
 import bsfImg from "./bsfImg.png";
 import icadImg from "./icadImg.png"
+import catholicDiocese from "./catholic-diocese-of-nsukka.png"
 
 export const assets = {
     profileImg,
@@ -55,6 +56,7 @@ export const assets = {
     sylviaImg,
     bsfImg,
     icadImg,
+    catholicDiocese
 };
 
 export const aboutData = {
@@ -77,6 +79,7 @@ export const skillsData = [
             "JavaScript",
             "React",
             "Next.js",
+            "TypeScript",
             "Tailwind CSS",
             "Framer Motion",
         ],
@@ -110,6 +113,18 @@ export const skillsData = [
 ]
 
 export const projectData = [
+
+    {
+        img: catholicDiocese,
+        type: "Church",
+        year: "2025",
+        title: "Catholic Diocese of Nsukka",
+        para: "This is an mvp version of for the website of the Catholic Diocese of Nsukka",
+        buttons: [
+            { text: "Live Site", link: "https://catholic-diocese-of-nsukka.vercel.app/", variant: "Blue", icon: "visibility" },
+            { text: "GitHub", link: "https://github.com/Vincentobi/CATHOLIC-DIOCESE-OF-NSUKKA", variant: "White", icon: "code" },
+        ],
+    },
     {
         img: sylviaImg,
         type: "Photography",
@@ -118,7 +133,7 @@ export const projectData = [
         para: "A comprehensive demo of a photography/storytelling agency website, showcasing responsive design, flexible database integration, and customizable content.",
         buttons: [
             { text: "Live Site", link: "https://www.sylviastudios.vercel.app", variant: "Blue", icon: "visibility" },
-            { text: "GitHub", link: "https://github.com/Vincentobi", variant: "White", icon: "code" },
+            { text: "GitHub", link: "https://github.com/Vincentobi/SYLVIASTUDIOS", variant: "White", icon: "code" },
         ],
     },
     {
@@ -129,7 +144,7 @@ export const projectData = [
         para: "International center for Accelerated development is a non-profi organization based in Nigeria.",
         buttons: [
             { text: "Live Site", link: "https://www.icadnig.org.ng", variant: "Blue", icon: "visibility" },
-            { text: "GitHub", link: "https://github.com/Vincentobi", variant: "White", icon: "code" },
+            { text: "GitHub", link: "https://github.com/Vincentobi/ICAD", variant: "White", icon: "code" },
         ]
     },
     {
