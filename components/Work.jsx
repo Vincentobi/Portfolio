@@ -3,6 +3,7 @@ import { projectData } from '../assets/assets'
 import ButtonBlue from './ButtonBlue'
 import ButtonWhite from './ButtonWhite'
 import { motion } from 'motion/react'
+import IconMapper from './IconMapper'
 
 const Work = () => {
     return (
@@ -32,7 +33,7 @@ const Work = () => {
                         viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary text-slate-700 dark:text-white hover:text-primary font-bold transition-all" href="https://github.com/Vincentobi" target='_blank' rel="noopener noreferrer"
                     >
-                        View GitHub <span className="material-symbols-outlined">arrow_outward</span>
+                        View GitHub <IconMapper iconName="arrow_outward" />
                     </motion.a>
                 </div>
                 <motion.div
@@ -72,11 +73,11 @@ const Work = () => {
                                     {project.buttons.map((btn, btnIndex) => (
                                         btn.variant === "Blue" ? (
                                             <ButtonBlue className="group-hover:text-primary cursor-pointer transition-colors" key={btnIndex} href={btn.link}>
-                                                {btn.text} <span className="material-symbols-outlined text-lg">{btn.icon}</span>
+                                                {btn.text} <IconMapper iconName={btn.icon} className="text-lg" />
                                             </ButtonBlue>
                                         ) : (
                                             <ButtonWhite className="group-hover:text-primary cursor-pointer transition-colors" key={btnIndex} href={btn.link}>
-                                                {btn.text} <span className="material-symbols-outlined text-lg">{btn.icon}</span>
+                                                {btn.text} <IconMapper iconName={btn.icon} className="text-lg" />
                                             </ButtonWhite>
                                         )
                                     ))}
@@ -87,7 +88,7 @@ const Work = () => {
                 </motion.div>
                 <div className="mt-16 text-center">
                     <a className="inline-flex items-center gap-2 text-slate-500 hover:text-primary transition-colors font-medium" href="https://github.com/Vincentobi" target="_blank" rel="noopener noreferrer">
-                        See all projects on GitHub <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                        See all projects on GitHub <IconMapper iconName="arrow_forward" className="text-sm" />
                     </a>
                 </div>
             </div>

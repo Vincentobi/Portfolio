@@ -75,19 +75,19 @@ const About = () => {
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
                             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-3">
-                                <IconMapper IconName='location_on' className='text-primary' />
+                                <IconMapper iconName='location_on' className='text-primary' />
                                 <span className="text-slate-700 dark:text-slate-300">{aboutData.location}</span>
                             </motion.div>
                             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-3">
-                                <IconMapper IconName='language' className='text-primary' />
+                                <IconMapper iconName='language' className='text-primary' />
                                 <span className="text-slate-700 dark:text-slate-300">{aboutData.languages}</span>
                             </motion.div>
                             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-3">
-                                <IconMapper IconName='school' className='text-primary' />
+                                <IconMapper iconName='school' className='text-primary' />
                                 <span className="text-slate-700 dark:text-slate-300">{aboutData.degree}</span>
                             </motion.div>
                             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-3">
-                                <IconMapper IconName='mail' className='text-primary' />
+                                <IconMapper iconName='mail' className='text-primary' />
                                 <span className="text-slate-700 dark:text-slate-300">{aboutData.mailAdress}</span>
                             </motion.div>
                         </div>

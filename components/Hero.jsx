@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonBlue from './ButtonBlue'
 import ButtonWhite from './ButtonWhite'
 import { motion } from 'motion/react'
+import IconMapper from './IconMapper'
 
 const Hero = () => {
     return (
@@ -102,7 +103,7 @@ const Hero = () => {
                 className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-400 hover:text-primary transition-colors animate-bounce" href="#about"
             >
                 <span className="text-xs font-medium uppercase tracking-widest">Scroll</span>
-                <span className="material-symbols-outlined">keyboard_arrow_down</span>
+                <IconMapper iconName="keyboard_arrow_down" />
             </motion.a>
         </section>
     )

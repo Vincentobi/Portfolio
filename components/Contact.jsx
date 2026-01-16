@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { aboutData } from '../assets/assets';
 import { motion } from 'motion/react'
+import IconMapper from './IconMapper';
 
 const Contact = () => {
 
@@ -51,7 +52,7 @@ const Contact = () => {
                         <div className="space-y-6">
                             <a className="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-surface-dark border border-slate-100 dark:border-slate-700 hover:border-primary transition-colors group" href={`mailto:${aboutData.mailAdress}`}>
                                 <div className="w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/20 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                                    <span className="material-symbols-outlined">mail</span>
+                                    <IconMapper iconName="mail" />
                                 </div>
                                 <div>
                                     <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Email Me</p>
@@ -60,7 +61,7 @@ const Contact = () => {
                             </a>
                             <div className="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-surface-dark border border-slate-100 dark:border-slate-700">
                                 <div className="w-12 h-12 rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-600 flex items-center justify-center">
-                                    <span className="material-symbols-outlined">share</span>
+                                    <IconMapper iconName="share" />
                                 </div>
                                 <div>
                                     <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">Follow Me</p>
@@ -101,7 +102,7 @@ const Contact = () => {
                             </div>
                             <button className="w-full h-12 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 flex items-center justify-center gap-2 cursor-pointer" type="submit">
                                 Send Message
-                                <span className="material-symbols-outlined text-sm">send</span>
+                                <IconMapper iconName="send" className="text-sm" />
                             </button>
                         </form>
                     </motion.div>

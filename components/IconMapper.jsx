@@ -10,21 +10,22 @@ import {
     MdArrowForward,
     MdSend,
     MdShare,
-    MdHelpOutline // Added a fallback icon
+    MdHelpOutline
 } from 'react-icons/md';
+import { HiArrowUpRight } from "react-icons/hi2";
 
 
 const IconMapper = ({ iconName = '', className, style }) => {
-    
-    // 2. Safety first: Trim and clean. Using default param '' prevents .replace() error
-    const cleanName = iconName.replace('material-symbols-outlined', '').trim();
 
-    // 3. Initialize with a default fallback component
-    let IconComponent = MdHelpOutline; 
+    // Safety first: Trim and clean.
+    const cleanName = iconName.trim().toLowerCase();
 
-    // 4. Switch Case with exact string matches
+    // Initialize with a default fallback component
+    let IconComponent = MdHelpOutline;
+
+    // Switch Case with exact string matches
     switch (cleanName) {
-        case 'keyboard_arrow_down': // Note: case-sensitivity matters
+        case 'keyboard_arrow_down':
             IconComponent = MdKeyboardArrowDown;
             break;
         case 'location_on':
@@ -48,6 +49,9 @@ const IconMapper = ({ iconName = '', className, style }) => {
         case 'arrow_forward':
             IconComponent = MdArrowForward;
             break;
+        case 'arrow_outward':
+            IconComponent = HiArrowUpRight;
+            break;
         case 'send':
             IconComponent = MdSend;
             break;
@@ -59,7 +63,7 @@ const IconMapper = ({ iconName = '', className, style }) => {
             break;
     }
 
-    // 5. Render the dynamically assigned component
+    // Render the dynamically assigned component
     return <IconComponent className={className} style={style} />;
 };
 
