@@ -61,7 +61,7 @@ export const assets = {
 
 export const aboutData = {
     title: "About Me",
-    para1: "I'm a passionate Fullstack Developer based in Lagos. With over 5 years of experience in software development, I have a strong foundation in creating dynamic and user-centric web applications.",
+    para1: "I'm a passionate Fullstack Developer based in Nsukka, Nigeria. With over 5 years of experience in software development, I have a strong foundation in creating dynamic and user-centric web applications.",
     para2: "My journey began with a curiosity for how things work on the internet, which quickly turned into a career. I love bridging the gap between engineering and design — combining my technical knowledge with a keen eye for design to create beautiful products. When I'm not coding, I'm likely praying my rosary ☺️, reading a book, or playing/watching football.",
     location: "Nsukka, Nigeria",
     languages: "Igbo, English",
