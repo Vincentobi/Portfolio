@@ -78,7 +78,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                         <a className='hover:underline transform transition-transform' onClick={closeMenu} href="#about">About</a>
                     </li>
                     <li>
-                        <a className='hover:underline transform transition-transform' onClick={closeMenu} href="#services">Services</a>
+                        <a className='hover:underline transform transition-transform' onClick={closeMenu} href="#skills">Skills</a>
                     </li>
                     <li>
                         <a className='hover:underline transform transition-transform' onClick={closeMenu} href="#work">My Work</a>
