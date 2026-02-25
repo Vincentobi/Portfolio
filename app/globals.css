@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-*{
+* {
   font-family: inter;
 }
 
@@ -15,33 +15,46 @@
   --color-background-dark: #101922;
   --color-surface-dark: #1e293b;
   --color-surface-dark-lighter: #334155;
-  
+
   --border-radius: "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px";
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 html {
-          scroll-behavior: smooth;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #137fec; 
-        }
-        html.dark ::-webkit-scrollbar-track {
-            background: #101922; 
-        }
-        html.dark ::-webkit-scrollbar-thumb {
-            background: #334155; 
-        }
-        .glass-nav {
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-        }
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #137fec;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #101922;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+.glass-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

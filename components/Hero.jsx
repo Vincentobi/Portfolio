@@ -7,8 +7,8 @@ import IconMapper from './IconMapper'
 const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-28 lg:pt-40 pb-24 bg-background-light dark:bg-background-dark overflow-x-hidden transition-colors duration-900 ease-in-out" id="home">
-            <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -z-10"></div>
-            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-[80px] -z-10"></div>
+            <div className="absolute top-20 -right-20 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-primary/10 rounded-full blur-[80px] sm:blur-[100px] -z-10"></div>
+            <div className="absolute bottom-0 -left-20 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] bg-purple-500/10 rounded-full blur-[60px] sm:blur-[80px] -z-10"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative">
                     <motion.div
@@ -92,7 +92,7 @@ const Hero = () => {
                                 <p>{'}'}</p>
                             </div>
                         </div>
-                        <div className="absolute -top-4 -right-4 w-full h-full rounded-2xl border-2 border-primary/30 -z-10"></div>
+                        <div className="absolute -top-4 -right-4 w-full h-full rounded-2xl border-2 border-primary/30 -z-10 hidden sm:block"></div>
                     </motion.div>
                 </div>
             </div>

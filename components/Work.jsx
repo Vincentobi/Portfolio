@@ -7,7 +7,7 @@ import IconMapper from './IconMapper'
 
 const Work = () => {
     return (
-        <section className="py-24 bg-white dark:bg-[#15202b] relative" id="work">
+        <section className="py-24 bg-white dark:bg-[#15202b] relative overflow-hidden" id="work">
             <div className="absolute inset-0 bg-slate-50 dark:bg-background-dark skew-y-1 transform origin-bottom-left -z-10 h-full"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
