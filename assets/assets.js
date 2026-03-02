@@ -26,6 +26,7 @@ import sylviaImg from "./sylviastudioImg.png";
 import bsfImg from "./bsfImg.png";
 import icadImg from "./icadImg.png"
 import catholicDiocese from "./catholic-diocese-of-nsukka.png"
+import jimmyPasWebsite from "./jimmyPasWebsite"
 
 export const assets = {
     profileImg,
@@ -56,7 +57,8 @@ export const assets = {
     sylviaImg,
     bsfImg,
     icadImg,
-    catholicDiocese
+    catholicDiocese,
+    jimmyPasWebsite
 };
 
 export const aboutData = {
@@ -113,6 +115,18 @@ export const skillsData = [
 ]
 
 export const projectData = [
+
+    {
+        img: jimmyPasWebsite,
+        type: "Travel-Agency",
+        year: "2026",
+        title: "Jimmy Pas",
+        para: "This is an mvp version of for the website of the Jimmy Pas Travel Agency",
+        buttons: [
+            { text: "Live Site", link: "https://jimmypas-travel-agency.vercel.app/", variant: "Blue", icon: "visibility" },
+            { text: "GitHub", link: "https://github.com/Vincentobi/JIMMYPAS-TRAVEL-AGENCY", variant: "White", icon: "code" },
+        ],
+    },
 
     {
         img: catholicDiocese,
