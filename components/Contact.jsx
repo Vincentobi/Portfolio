@@ -2,10 +2,22 @@ import React, { useState } from 'react'
 import { aboutData } from '../assets/assets';
 import { motion } from 'motion/react'
 import IconMapper from './IconMapper';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
 
     const [loading, setLoading] = useState(false)
+
+    const notify = () => toast.success('Message sent successfully!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined
+
+    });
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -25,10 +37,18 @@ const Contact = () => {
         })
 
         if (res.ok) {
-            alert('Message sent successfully!')
+            notify()
             e.target.reset()
         } else {
-            alert('Something went wrong')
+            toast.error('Something went wrong', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
         setLoading(false)
     }
