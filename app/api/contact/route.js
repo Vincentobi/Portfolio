@@ -8,12 +8,12 @@ export async function POST(req) {
         const { name, email, subject, message } = await req.json()
 
         // Save to Supabase
-        const { error: supabaseError } = await supabase.from('messages').insert([{ name, email, subject, message }])
+        // const { error: supabaseError } = await supabase.from('messages').insert([{ name, email, subject, message }])
 
-        if (supabaseError) {
-            console.error('Supabase error:', supabaseError)
-            return Response.json({ error: 'Failed to save to database' }, { status: 500 })
-        }
+        // if (supabaseError) {
+        //     console.error('Supabase error:', supabaseError)
+        //     return Response.json({ error: 'Failed to save to database' }, { status: 500 })
+        // }
 
         // Send Email
         try {

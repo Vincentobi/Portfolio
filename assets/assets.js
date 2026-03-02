@@ -26,7 +26,7 @@ import sylviaImg from "./sylviastudioImg.png";
 import bsfImg from "./bsfImg.png";
 import icadImg from "./icadImg.png"
 import catholicDiocese from "./catholic-diocese-of-nsukka.png"
-import jimmyPasWebsite from "./jimmyPasWebsite"
+import jimmyPasWebsite from "./jimmyPasWebsite.png"
 
 export const assets = {
     profileImg,

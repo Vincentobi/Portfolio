@@ -100,8 +100,10 @@ const Contact = () => {
                                 <label className="text-sm font-medium text-slate-700 dark:text-slate-300" htmlFor="message">Message</label>
                                 <textarea className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-background-dark border border-slate-200 dark:border-slate-600 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-slate-900 dark:text-white resize-none" id="message" name="message" placeholder="Tell me about your project..." rows="4"></textarea>
                             </div>
-                            <button className="w-full h-12 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 flex items-center justify-center gap-2 cursor-pointer" type="submit">
-                                Send Message
+                            <button
+                                disabled={loading}
+                                className="w-full h-12 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 flex items-center justify-center gap-2 cursor-pointer" type="submit">
+                                {loading ? 'Sending...' : 'Send Message'}
                                 <IconMapper iconName="send" className="text-sm" />
                             </button>
                         </form>
